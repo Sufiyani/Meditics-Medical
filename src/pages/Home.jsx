@@ -358,49 +358,50 @@ const blogs = [
                 />
               </div>
 
-              {/* Desktop Mission Slider - Only visible on large screens */}
-              <div className="hidden xl:block absolute -left-32 -top-16 w-80">
-                <Swiper
-                  modules={[Autoplay]}
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  autoplay={{ delay: 3000 }}
-                  loop={true}
-                >
-                  <SwiperSlide>
-                    <div className="bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-md p-6 shadow-lg">
-                      <p className="text-slate-300 text-sm leading-relaxed italic">
-                        My mission is to treat every patient with care, respect, and the highest standard of medical knowledge
-                      </p>
-                      <p className="text-green-400 font-medium text-sm pt-2">— Robel Roy .USY</p>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-md p-6 shadow-lg">
-                      <p className="text-slate-300 text-sm leading-relaxed italic">
-                        Excellence in healthcare through compassion and evidence-based medicine
-                      </p>
-                      <p className="text-green-400 font-medium text-sm pt-2">— Dr. Tushar Raja</p>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
+           {/* Desktop Mission Slider - Only visible on large screens */}
+<div className="hidden xl:block absolute top-0 -right-24 w-80">
+  <Swiper
+    modules={[Autoplay]}
+    spaceBetween={20}
+    slidesPerView={1}
+    autoplay={{ delay: 3000 }}
+    loop={true}
+  >
+    <SwiperSlide>
+      <div className="bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-md p-6 shadow-lg">
+        <p className="text-slate-300 text-sm leading-relaxed italic">
+          My mission is to treat every patient with care, respect, and the highest standard of medical knowledge
+        </p>
+        <p className="text-green-400 font-medium text-sm pt-2">— Robel Roy .USY</p>
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className="bg-slate-800/90 backdrop-blur-sm border border-slate-700 rounded-md p-6 shadow-lg">
+        <p className="text-slate-300 text-sm leading-relaxed italic">
+          Excellence in healthcare through compassion and evidence-based medicine
+        </p>
+        <p className="text-green-400 font-medium text-sm pt-2">— Dr. Tushar Raja</p>
+      </div>
+    </SwiperSlide>
+  </Swiper>
+</div>
 
-              {/* Desktop Social Icons - Only visible on large screens */}
-              <div className="hidden xl:flex absolute right-4 top-1/2 -translate-y-1/2 flex-col gap-3">
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
-                  <FaFacebookF />
-                </a>
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
-                  <FaTwitter />
-                </a>
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
-                  <FaYoutube />
-                </a>
-                <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
-                  <FaInstagram />
-                </a>
-              </div>
+             {/* Desktop Social Icons - Only visible on large screens */}
+<div className="hidden xl:flex absolute -right-40 top-1/2 -translate-y-1/2 flex-col gap-3">
+  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
+    <FaFacebookF />
+  </a>
+  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
+    <FaTwitter />
+  </a>
+  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
+    <FaYoutube />
+  </a>
+  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full text-white bg-blue-700 hover:bg-blue-800 transition">
+    <FaInstagram />
+  </a>
+</div>
+
             </div>
           </div>
 
@@ -1029,7 +1030,7 @@ const blogs = [
       <div className="sm:col-span-2 lg:col-span-1">
         <a href="index.html" className="block mb-4">
           <img
-            src="/public/images/Meditics heart logo.svg"
+            src="images/Meditics heart logo.svg"
             alt="logo"
             className="w-28 sm:w-32 lg:w-36 mx-auto sm:mx-0"
           />
