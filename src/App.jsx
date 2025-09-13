@@ -137,7 +137,7 @@ function App() {
           }
         />
          <Route
-          path="/pages/team-details"
+          path="/pages/team-details/:id"
           element={
             <>
             {/* <Topbar /> */}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight, Search, Calendar, User, MessageCircle, Clock, ArrowRight } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -219,12 +219,9 @@ const Blog = () => {
 
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center justify-center space-x-2 text-white/90">
-            <a
-              href="#"
-              className="hover:text-accent-400 transition-colors duration-200 font-medium text-sm sm:text-base"
-            >
+             <Link to="/" className="hover:text-blue-300">
               Home
-            </a>
+            </Link>
             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/60" />
             <span className="text-white font-medium text-sm sm:text-base">Blog Standard</span>
           </nav>
