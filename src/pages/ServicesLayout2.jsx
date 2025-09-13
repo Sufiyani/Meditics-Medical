@@ -3,7 +3,7 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import { ArrowRight } from "lucide-react";
 const ServicesLayout2 = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -72,21 +72,18 @@ const ServicesLayout2 = () => {
                   alt={service.title}
                   className="w-full h-52 object-cover"
                 />
-                {/* Arrow */}
-                <div
-                  className="absolute bottom-4 right-4 flex items-center justify-center 
-                             text-blue-600 transition-all duration-300
-                             group-hover:bg-blue-600 group-hover:text-white 
-                             group-hover:rounded-full group-hover:p-2"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M12.293 3.293a1 1 0 011.414 0L19 8.586a1 1 0 010 1.414l-7 7a1 1 0 01-1.414-1.414L16.586 10H3a1 1 0 110-2h13.586l-4.293-4.293a1 1 0 010-1.414z" />
-                  </svg>
-                </div>
+               {/* Learn More Button */}
+<div className="absolute bottom-4 right-4">
+  <Link
+    to="/servicesdetails"
+    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg
+               hover:bg-blue-700 transition-all duration-300"
+  >
+    Learn More
+    <ArrowRight className="w-4 h-4" /> {/* lucide-react arrow icon */}
+  </Link>
+</div>
+
               </div>
 
               <div className="p-6 flex-1">
